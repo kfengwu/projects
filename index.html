@@ -9,16 +9,6 @@
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init({
-            publicKey: "BagrxtiTuGiMjqRQv",
-          });
-       })();
-    </script>
 </head>
 <body>
         <div class="wrapper">
@@ -176,10 +166,11 @@
                         <h1 class="title">Contact Me!</h1>
                         
                         <div class="contact-box">
-                            <form action="#">
-                                <input type="text" id="name" class="field" placeholder="Full Name" required>
-                                <input type="email" id="email" class="field" placeholder="Email Address" required>
-                                <textarea name="" id="message" cols="30" rows="10" class="field" placeholder="Your Message"  required></textarea>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="0a7405ec-4fb3-4d78-b99b-c3e2298c5ebb">
+                                <input type="text" class="field" placeholder="Full Name" required>
+                                <input type="email" class="field" placeholder="Email Address" required>
+                                <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message"  required></textarea>
                                 <input type="submit" class="btn" value="Send Message">
                             </form>
                         </div>
